@@ -152,10 +152,6 @@ class Network(object):
                     print 'weights(%d,%d): expected - actural %.4e - %.4e' % (
                         i, j, expect_grad, fc.W_grad[i,j])
 
-
-from bp import train_data_set
-
-
 def transpose(args):
     return map(
         lambda arg: map(
